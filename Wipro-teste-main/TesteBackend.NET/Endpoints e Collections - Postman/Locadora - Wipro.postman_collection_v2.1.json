@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "ced2d078-f3da-4598-b9f5-c18644641320",
+		"name": "Locadora - Wipro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Filmes",
+			"item": [
+				{
+					"name": "GetFilmes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/api/Filmes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"Filmes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFilmesPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/api/Filmes/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"Filmes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostFilme",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idFilme\": 5,\n    \"nomeFilme\": \"A procura da Felicidade\",\n    \"dtLancamento\": \"2006-04-11T00:00:00\",\n    \"disponibilidade\": true\n}"
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/Filmes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"Filmes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutFilme",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"idFilme\": 1,\n        \"nomeFilme\": \"Efeito Borboleta\",\n        \"dtLancamento\": \"2004-03-12T00:00:00\",\n        \"disponibilidade\": true\n}"
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/Filmes/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"Filmes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "GetClientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/api/Clientes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"Clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostCliente",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"nomeCliente\": \"Matheus Silva\",\n        \"cpf\": \"123.564.465-11\",\n        \"dtNascimento\": \"2001-12-11T00:00:00\"\n}"
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/Clientes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"Clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClientePorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/api/Clientes/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"Clientes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Locacoes",
+			"item": [
+				{
+					"name": "GetLocacoes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/api/Locacao",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"Locacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostLocacao",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"idFilme\": 4,\n        \"idCliente\": 2,\n        \"dtEntrega\": \"2020-06-21T00:00:00\"\n }"
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/Locacao",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"Locacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutRealizarEntrega",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/Locacao/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"Locacao",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetLocacaoPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/api/Locacao/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"Locacao",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

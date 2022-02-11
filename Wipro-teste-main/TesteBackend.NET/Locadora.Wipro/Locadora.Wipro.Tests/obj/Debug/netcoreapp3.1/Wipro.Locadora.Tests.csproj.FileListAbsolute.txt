@@ -1,0 +1,4 @@
+C:\Users\Rodrigo\Desktop\WiPro\Teste---Wipro-master\BackEnd\Locadora.Wipro\Locadora.Wipro.Tests\obj\Debug\netcoreapp3.1\Wipro.Locadora.Tests.csprojAssemblyReference.cache
+C:\Users\Rodrigo\Desktop\WiPro\Teste---Wipro-master\BackEnd\Locadora.Wipro\Locadora.Wipro.Tests\obj\Debug\netcoreapp3.1\Wipro.Locadora.Tests.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\Desktop\WiPro\Teste---Wipro-master\BackEnd\Locadora.Wipro\Locadora.Wipro.Tests\obj\Debug\netcoreapp3.1\Wipro.Locadora.Tests.AssemblyInfo.cs
+C:\Users\Rodrigo\Desktop\WiPro\Teste---Wipro-master\BackEnd\Locadora.Wipro\Locadora.Wipro.Tests\obj\Debug\netcoreapp3.1\Wipro.Locadora.Tests.csproj.CoreCompileInputs.cache
